@@ -1,0 +1,56 @@
+BUILD INSTRUCTIONS
+
+You'll need:
+
+Apache
+	HttpCore
+	e.g. http://apache.prosite.de/httpcomponents/httpclient/source/httpcomponents-client-4.0.1-src.zip
+	
+	HttpClient
+	e.g. http://apache.prosite.de/httpcomponents/httpcore/source/httpcomponents-core-4.0.1-src.zip
+	
+	Commons Logging
+	e.g. http://apache.abdaal.com/commons/logging/source/commons-logging-1.1.1-src.zip
+	[In archive you'll find a folder src/java with required packages]
+	
+	Commons Codec
+	e.g. http://apache.imsam.info/commons/codec/source/commons-codec-1.4-src.zip
+
+Put all into the source directory of this app. Finished, this should be your folder structure:
+
+assets\, bin\, gen\, res\
+	[something by Eclipse, Android & Java]
+src\
+	caldav\
+	...
+	org\
+		apache\
+			commons\
+				codec\
+					...
+				logging\
+					...
+			http\
+				...
+[some files on \]
+
+The packages with errors aren't neccessary. Delete all classes with errors, otherwise
+the Android SDK doesn't compile your app.
+
+Next you have to create in org.apache.http.client.methods the following class:
+(this is subject to change, maybe I'll to something with Reflections or such)
+
+//------- HttpAny.java --------
+package org.apache.http.client.methods;
+import java.net.URI;
+import org.apache.http.annotation.NotThreadSafe;
+@NotThreadSafe
+public class HttpAny extends HttpEntityEnclosingRequestBase {
+    public String METHOD_NAME = "GET";
+    public HttpAny() { super(); }
+    public HttpAny(final URI uri) { super(); setURI(uri); }
+    public HttpAny(final String uri) { super(); setURI(URI.create(uri)); }
+    public String getMethod() { return METHOD_NAME; }
+    public void setMethod(String newMethod) { METHOD_NAME = newMethod; }
+}
+//-----------------------------
