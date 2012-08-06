@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="@string/settings_caldavserver">
+		<EditTextPreference android:title="@string/settings_caldavserver_uri" android:key="cduri" android:summary="@string/settings_caldavserver_uri_descr"></EditTextPreference>
+		<EditTextPreference android:title="@string/settings_caldavserver_user" android:key="cduser" android:summary="@string/settings_caldavserver_user_descr"></EditTextPreference>
+		<EditTextPreference android:title="@string/settings_caldavserver_pass" android:key="cdpass" android:summary="@string/settings_caldavserver_pass_descr" android:password="true"></EditTextPreference>
+	</PreferenceCategory>
+	<PreferenceCategory android:title="@string/settings_syncoptions">
+		<ListPreference android:key="syrange" android:title="@string/settings_syncoptions_range" android:summary="@string/settings_syncoptions_syrange_descr" android:entries="@array/range_texts" android:entryValues="@array/range_values" android:defaultValue="4"></ListPreference>
+		<ListPreference android:key="syfrequ" android:title="@string/settings_syncoptions_frequeny" android:summary="@string/settings_syncoptions_syfreq_descr" android:entries="@array/frequ_texts" android:entryValues="@array/frequ_values" android:defaultValue="3"></ListPreference>
+		<CheckBoxPreference android:key="sywlan" android:title="@string/settings_syncoptions_onlywlan" android:summary="@string/settings_syncoptions_onlywlan_descr"></CheckBoxPreference>
+	</PreferenceCategory>
+	<PreferenceCategory android:title="@string/settings_calendars">
+		<CheckBoxPreference android:key="caall" android:title="@string/settings_calendars_caall" android:summary="@string/settings_calendars_caall_descr"></CheckBoxPreference>
+	</PreferenceCategory>
+</PreferenceScreen>

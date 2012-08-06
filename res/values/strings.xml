@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="main_info_results">Results:</string>
+    <string name="main_info_lastsync">Last sync:</string>
+    <string name="main_info_status">Status:</string>
+    <string name="app_name">Sync Calendars</string>
+    <string name="welcomestr">e7o.de CalDAV synchronizing\nFree and opensource (GPLv3)</string>
+    <string name="main_use">Press menu button for manual sync, settings and further actions.</string>
+    <string name="main_toast_syncresult">change(s) done.</string>
+    
+    <string name="mainmenu_removeentries">Kill events</string>
+    <string name="mainmenu_errors">Log</string>
+    <string name="mainmenu_export">Export</string>
+    <string name="mainmenu_syncnow">Synchronize now</string>
+    <string name="mainmenu_about">About</string>
+    <string name="mainmenu_settings">Settings</string>
+    
+    <string name="log_infocopy">Copied.</string>
+    
+    <string name="dialog_yes">Yes</string>
+    <string name="dialog_no">No</string>
+    <string name="dialog_ok">Ok</string>
+    <string name="dialog_reallydeleteallevents">With this option you can delete all local events including sync history. After this you could do a clean sync from CalDAV server.\nAre you really sure?</string>
+    <string name="dialog_deleteallevents_done">Done.\n\nIf there are events still yet, go to your Android Settings, Applications, Manage Applications, Calendar Storage, Clear Data.</string>
+    
+    <string name="settings_calendars">Calendars</string>
+    
+    <string name="settings_calendars_caall">Sync all calendars</string>
+    <string name="settings_calendars_caall_descr">Sync all instead of your main calendar (not recommended)</string>
+    
+    <string name="settings_syncoptions">Sync options</string>
+   	
+    <string name="settings_syncoptions_range">Synchronizing range</string>
+    <string name="settings_syncoptions_syrange_descr">Time range to sync</string>
+    <string name="settings_syncoptions_frequeny">Frequency</string>
+    <string name="settings_syncoptions_syfreq_descr">How often should be synchronized</string>
+    <string name="settings_syncoptions_onlywlan">WLAN only</string>
+    <string name="settings_syncoptions_onlywlan_descr">Sync only if in WLAN mode</string>
+    
+    <string name="settings_caldavserver">CalDav Server</string>
+    
+    <string name="settings_caldavserver_pass">Password</string>
+    <string name="settings_caldavserver_pass_descr">Password if needed</string>
+    <string name="settings_caldavserver_user">Username</string>
+    <string name="settings_caldavserver_user_descr">Username for authentication</string>
+    <string name="settings_caldavserver_uri">URI</string>
+    <string name="settings_caldavserver_uri_descr">Including http:// or https://</string>
+</resources>

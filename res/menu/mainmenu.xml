@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item android:title="@string/mainmenu_syncnow" android:id="@+id/mainmenu_syncnow" android:icon="@android:drawable/ic_menu_my_calendar"></item>
+<item android:title="@string/mainmenu_settings" android:id="@+id/mainmenu_settings" android:icon="@android:drawable/ic_menu_preferences"></item>
+<item android:title="@string/mainmenu_export" android:id="@+id/mainmenu_export" android:icon="@android:drawable/ic_menu_share"></item>
+<item android:title="@string/mainmenu_errors" android:id="@+id/mainmenu_errors" android:icon="@android:drawable/ic_menu_view"></item>
+<item android:title="@string/mainmenu_removeentries" android:id="@+id/mainmenu_removeentries" android:icon="@android:drawable/ic_menu_close_clear_cancel"></item>
+<item android:title="@string/mainmenu_about" android:id="@+id/mainmenu_about" android:icon="@android:drawable/ic_menu_info_details"></item>
+
+</menu>

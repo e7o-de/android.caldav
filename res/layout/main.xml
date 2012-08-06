@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_vertical|center_horizontal" android:id="@layout/main" android:padding="5px">
+
+<TableLayout android:id="@+id/TableLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="left">
+<TableRow android:id="@+id/TableRow01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10px"><ImageView android:id="@+id/ImageView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/icon"></ImageView><TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/welcomestr" android:layout_gravity="center_vertical|center_horizontal" android:layout_marginLeft="5px"/>
+</TableRow>
+</TableLayout>
+<TableLayout android:id="@+id/TableLayout02" android:layout_width="wrap_content" android:layout_height="wrap_content"><TableRow android:id="@+id/TableRow02" android:layout_width="wrap_content" android:layout_height="wrap_content"><TextView android:id="@+id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_info_status" android:textStyle="bold"></TextView>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tvStatus" android:text="[n/a]"></TextView>
+</TableRow><TableRow android:id="@+id/TableRow02" android:layout_width="wrap_content" android:layout_height="wrap_content"><TextView android:id="@+id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_info_lastsync" android:textStyle="bold"></TextView>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tvLast" android:text="[n/a]"></TextView>
+</TableRow><TableRow android:id="@+id/TableRow02" android:layout_width="wrap_content" android:layout_height="wrap_content"><TextView android:id="@+id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_info_results" android:textStyle="bold"></TextView>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/tvResult" android:text="[n/a]"></TextView>
+</TableRow>
+</TableLayout>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/useDescr" android:text="@string/main_use" android:layout_marginTop="10px"></TextView>
+
+</LinearLayout>
